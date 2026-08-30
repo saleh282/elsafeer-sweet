@@ -1,0 +1,54 @@
+:root {
+  /* Matches the shop's real brand identity (from their menu/website): gold on dark charcoal */
+  --cocoa-900: #1A1013;
+  --cocoa-700: #3A2A2E;
+  --cocoa-500: #6E5A54;
+  --caramel-600: #C9915A;
+  --caramel-500: #D4A46F;
+  --honey-400: #E8C9A0;
+  --pistachio-600: #4F7942;
+  --brick-600: #A63A32;
+  --ivory-50: #FAF7F2;
+  --ivory-100: #F3ECE1;
+  --border: #E6DACB;
+  --white: #FFFFFF;
+
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --shadow-soft: 0 8px 24px -12px rgba(43, 27, 18, 0.25);
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Cairo", "Segoe UI", sans-serif;
+  background: var(--ivory-50);
+  color: var(--cocoa-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--caramel-600);
+  outline-offset: 2px;
+}
+
+.numeral {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
